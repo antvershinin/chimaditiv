@@ -1,0 +1,43 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1150px;
+    gap:20px;
+    margin: auto;
+}
+
+.title {
+    font-weight: bold;
+    width: 100%;
+    font-size: 25px;
+}
+
+.description {
+    width: 95%;
+    font-size: 20px;
+}
+
+.cardsWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 15px;
+}
+
+@media (max-width:1200px) {
+    .main {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width:550px) {
+    .cardsWrapper {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card {
+        width: 47%;
+    }
+}

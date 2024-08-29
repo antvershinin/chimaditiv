@@ -1,0 +1,104 @@
+.main {
+    display: flex;
+    width: 100%;
+}
+
+.cardWrapper {
+    display: flex;
+    height: 500px;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: default;
+    border: 1px solid gray;
+}
+
+.overlay {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 1.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:25px;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    position: absolute;
+    top: 77%;
+    transition: 2s;
+    opacity: 0;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    background-color: black;
+    color: white;
+}
+
+.cardWrapper:hover .overlay {
+    opacity: 0.9;
+}
+
+.cardWrapper:hover .button {
+    opacity: 1;
+}
+
+
+@media (max-width:1100px) {
+    .cardWrapper {
+        height: 350px;
+    }
+    .description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .cardWrapper {
+        width: 49.5%;
+        height: 300px;
+    }
+    .main {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .overlay {
+        display: none;
+    }
+    .button {
+        height: 30px;
+        opacity: 1;
+        top:88%;
+    }
+    .image {
+        width: 100%;
+        height: 85%;
+    }
+}
+
+
+
+
+
