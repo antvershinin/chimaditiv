@@ -5,7 +5,7 @@ import { ICatalogue } from "../../data/catalogues/catalogues";
 
 interface Props {
   cards?: ICatalogue[];
-  catalogue: boolean;
+  catalogue?: boolean;
 }
 
 export const HomeCatalogue = (props: Props) => {
@@ -21,9 +21,10 @@ export const HomeCatalogue = (props: Props) => {
                 {el.desctiptionShort}
               </div>
             </div>
-            <div onClick={()=>navigate(`/catalog/${el.adress}`)} className={styles.button}>
-              <div className={styles.description}>Узнать больше</div> 
-            </div>
+            {/* <div onClick={()=>navigate(`/${props.catalogue ? 'catalog' : 'products'}/${el.adress}`)} className={styles.button}> */}
+            {props.catalogue && <div onClick={()=>navigate(`/${props.catalogue ? 'catalog' : ''}`)} className={styles.button}>
+              <div className={styles.description}>Узнать больше</div>
+            </div>}
           </div>
         ))}
     </div>

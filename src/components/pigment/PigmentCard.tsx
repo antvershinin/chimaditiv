@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './PigmentCard.module.css'
 import { IPigment } from '../../assets/catalogues/standart'
 
+
 interface ICard {
   pigment : IPigment
 }

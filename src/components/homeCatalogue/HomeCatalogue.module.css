@@ -5,8 +5,8 @@
 
 .cardWrapper {
     display: flex;
-    height: 500px;
-    width: 25%;
+    width: 100%;
+    max-height: 550px;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -35,6 +35,7 @@
 .description {
     font-size: 20px;
     font-weight: bold;
+    white-space: pre-wrap;
 }
 
 .image {
@@ -67,9 +68,9 @@
 
 
 @media (max-width:1100px) {
-    .cardWrapper {
+    /* .cardWrapper {
         height: 350px;
-    }
+    } */
     .description {
         font-size: 15px;
     }
@@ -78,7 +79,7 @@
 @media (max-width:600px) {
     .cardWrapper {
         width: 49.5%;
-        height: 300px;
+        max-height: 350px;
     }
     .main {
         flex-wrap: wrap;

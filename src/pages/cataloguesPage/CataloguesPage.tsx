@@ -12,6 +12,7 @@ export const Catalogue0 = () => {
   useEffect(() => {
     const index = catalogues.findIndex((el) => el.adress === catalog);
 
+    window.scrollTo({top:0, behavior:'smooth'})
     if (index === -1) navigate("/");
     else {
       setCatalogue(catalogues[index]);
@@ -23,7 +24,7 @@ export const Catalogue0 = () => {
       {catalogue && <div className={styles.title}>{catalogue.name}</div>}
       <div className={styles.description}>{catalogue?.description}</div>
       <div className={styles.cardsWrapper}>
-      {catalogue?.pigments.map((el) => (
+      {catalogue?.pigments && catalogue?.pigments.map((el) => (
         <div className={styles.card}>
         <PigmentCard key={el.name} pigment={el} />
         </div>

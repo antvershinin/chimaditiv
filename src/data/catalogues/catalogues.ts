@@ -13,7 +13,8 @@ export interface ICatalogue {
   adress: string;
   description: string;
   desctiptionShort: string;
-  pigments: IPigment[];
+  pigments?: IPigment[];
+  products?:[]
 }
 
 export const catalogues: ICatalogue[] = [
