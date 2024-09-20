@@ -22,7 +22,7 @@ export const HomeCatalogue = (props: Props) => {
               </div>
             </div>
             {/* <div onClick={()=>navigate(`/${props.catalogue ? 'catalog' : 'products'}/${el.adress}`)} className={styles.button}> */}
-            {props.catalogue && <div onClick={()=>navigate(`/${props.catalogue ? 'catalog' : ''}`)} className={styles.button}>
+            {props.catalogue && <div onClick={()=>navigate(`/${props.catalogue ? 'catalog' : 'products'}/${el.adress}`)} className={styles.button}>
               <div className={styles.description}>Узнать больше</div>
             </div>}
           </div>
