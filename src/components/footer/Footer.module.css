@@ -9,14 +9,14 @@
     color: white;
     font-weight: 600;
     padding: 20px;
-    align-items: center;
 }
 
 .content {
     display: flex;
-    flex-direction: column;
-    gap:10px;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 70%;
 }
 
 .contacts {
@@ -29,4 +29,5 @@
     display: flex;
     gap:5px;
     align-items: center;
+    text-shadow: 1px 1px 1px black;
 }
