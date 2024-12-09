@@ -1,11 +1,15 @@
 import { deepContrastPigments } from "../../assets/catalogues/deepContrast";
+import { diamantiPigments } from "../../assets/catalogues/diamanti";
 import { forBlackPigments } from "../../assets/catalogues/forBlack";
+import { printablePigments } from "../../assets/catalogues/printable";
 import { smartPearlPigments } from "../../assets/catalogues/smartPearl";
 import { IPigment, standartPigments } from "../../assets/catalogues/standart";
 import cat1 from "../../assets/home/catalogue/catalogue1.jpeg";
 import cat2 from "../../assets/home/catalogue/catalogue2.jpeg";
 import cat3 from "../../assets/home/catalogue/catalogue3.jpeg";
 import cat4 from "../../assets/home/catalogue/catalogue4.jpeg";
+import cat5 from '../../assets/home/catalogue/catalogue5.jpeg'
+import cat6 from '../../assets/home/catalogue/catalogue6.jpeg'
 
 export interface ICatalogue {
   name: string;
@@ -53,5 +57,23 @@ export const catalogues: ICatalogue[] = [
       'Серия "SMART PEARL" состоит из новых разработок, не вошедших в другие каталоги.',
     desctiptionShort: "Новые разработки",
     pigments: smartPearlPigments,
+  },
+  {
+    name: "Каталог Printable",
+    bgimage: cat5,
+    adress: "printable",
+    description:
+      'Высокоукрывистые композитные пигменты серии “PRINTABLE” предназначены для лакокрасочных систем на водной или органорастворимой основе. Обладают уникальным цветом, высокой атмосферостойкостью и термостойкостью.',
+    desctiptionShort: "Новые разработки",
+    pigments: printablePigments,
+  },
+  {
+    name: "Каталог Diamanti",
+    bgimage: cat6,
+    adress: "diamanti",
+    description:
+      'Пигменты серии “DIAMANTI” представляют собой композит из объемного полимерного ядра с поверхностно нанесенными перламутровыми пигментами. Благодаря такой конструкции перламутровые пигменты расположены под разными углами к источнику света, что обеспечивает декоративный эффект мерцания.',
+    desctiptionShort: "Новые разработки",
+    pigments: diamantiPigments,
   },
 ];

@@ -16,7 +16,7 @@ export const PigmentCard  = (props:ICard) => {
       </div>
       <div className={styles.descWrapper}>
         <span style={{fontWeight:'bold'}}>{name}</span>
-        <span>{size} мкм</span>
+        {size && <span>{size} мкм</span>}
         <span>SMYK: {smyk}</span>
       </div>
     </div>

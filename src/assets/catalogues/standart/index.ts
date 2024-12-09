@@ -22,7 +22,7 @@ import XADUO31 from './images/DUO31.png'
 
 export interface IPigment {
     name:string;
-    size:string;
+    size?:string;
     image:string;
     smyk:string
 }

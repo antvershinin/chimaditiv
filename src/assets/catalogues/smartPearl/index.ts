@@ -14,6 +14,6 @@ export const smartPearlPigments :IPigment[] = [
     {name:'SM901', image:SM901, size:'40-200', smyk:'(7, 3, 0, 44)'},
     {name:'SM902', image:SM902, size:'10-60', smyk:'(13, 8, 0, 48)'},
     {name:'SM903', image:SM903, size:'10-60', smyk:'(6, 6, 0, 45)'},
-    {name:'DSS910', image:DSS910, size:'10-60', smyk:'(0, 26, 42, 28)'},
+    {name:'DSS910', image:DSS910, size:'10-60', smyk:'(7, 4, 0, 46)'},
     {name:'Frost F1', image:FrostF1, size:'10-200', smyk:'(6, 3, 0, 55)'}
 ]
